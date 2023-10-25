@@ -1,7 +1,7 @@
 <?php
 
-$paragrafo=$GET['paragrafo'];
-$parola=$GET['parola'];
+$paragrafo=$POST['paragrafo'];
+$parola=$POST['parola'];
 
 
 ?>
