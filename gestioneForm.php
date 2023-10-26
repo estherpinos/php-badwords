@@ -1,11 +1,16 @@
 <?php
 
-$paragrafo=$POST['paragrafo'];
-$parola=$POST['parola'];
+$paragrafo = $_POST['paragrafo'];
+$parola = $_POST['parola'];
 
-$lunghezza_paragrafo= strlen($paragrafo);
+$lunghezza_paragrafo = strlen($paragrafo);
 
 $paragrafo_modificato = str_replace($parola,'***',$paragrafo);
+
+$lunghezza_paragrafo_modificato = strlen($paragrafo_modificato);
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -19,5 +24,8 @@ $paragrafo_modificato = str_replace($parola,'***',$paragrafo);
     <p> <?php echo "Paragrafo: $paragrafo" ?> </p>
     <p> <?php echo "lunghezza paragrafo: $lunghezza_paragrafo" ?> </p>
     <p> <?php echo "Paragrafo modificato: $paragrafo_modificato" ?> </p>
+    <p> <?php echo "Lunghezza paragrafo modificato: $lunghezza_paragrafo_modificato" ?> </p>
+
+
 </body>
 </html>
